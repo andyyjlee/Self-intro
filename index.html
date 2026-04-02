@@ -1,44 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>자기소개 카드</title>
-    <link rel="stylesheet" href="style.css"/>
-<!-- span이랑 div 차이 알기 -->
-<!---->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Practice Portfolio</title>
+<link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
-    <div class="title-container">
-    <h1> 이유준 </h1>
-<p>연세대 멋쟁이 사자처럼 14기</p>
-<p>프론트앤드 파트</p>
-<p>경영학과    2021123199</p>
- </div>
-<div>
-<br/>
+
+    <input type="radio" id="home" name="tab" checked>
+<input type="radio" id="intro-tab" name="tab">
+<input type="radio" id="dev-tab" name="tab">
+<input type="radio" id="goals-tab" name="tab">
+
+<!-- 버튼 -->
+<div class="tabs">
+  <label for="intro-tab">Introduction</label>
+  <label for="dev-tab">Development</label>
+  <label for="goals-tab">Goals</label>
 </div>
 
-<div class="later-half">
-    <p><p><b> Contact </b></p></p>
-<p>tel: 010-7411-8225</p>
-<p>email: andyyjlee@naver.com</p>
-</div>
-<br/>
-<div class="container likes-container">
-    <p class="title-text"><b>Likes</b></p>
-
-<ol class="abcd">
-<li>스포츠 경기 관람 (격투기, 농구)</li>
-<li>홈 카페: 커피 브루잉..</li>
-<li>여행! </li>
-</ol>
+<!-- 콘텐츠 -->
+<div id="home-content" class="content center">
+    <h3>안녕하세요 !</h3>
 </div>
 
+<!-- Introduction -->
+<div id="intro-content" class="content">
+  <h1>이유준</h1>
+  <p>연세대 멋쟁이 사자처럼 14기</p>
+  <p>프론트엔드 파트</p>
+  <p>경영학과 21학번</p>
+
+<div class="contact">
+  <p><b>Contact</b></p>
+  <p>tel: 010-7411-8225</p>
+  <p>email: andyyjlee@naver.com</p>
 </div>
-<div class="links">
-<a href="https://github.com/andyyjlee/">My Github</a>
-<br/><a href="https://www.instagram.com/youjune.lee/">Instagram</a>
+
+  <p><b>Likes</b></p>
+  <ol>
+    <li>스포츠 경기 관람</li>
+    <li>홈 카페 (커피 브루잉..)</li>
+    <li>여행</li>
+  </ol>
+<div class ="links">
+  <a href="https://github.com/andyyjlee/">My Github</a><br>
+  <a href="https://www.instagram.com/youjune.lee/">Instagram</a>
+</div>
+</div>
+<!-- Development -->
+<div id="dev-content" class="content">
+  <h2>Development</h2>
+  <p>HTML이랑 CSS를 비롯한 다양한 프론트엔드 코딩을 배워보고 싶어요 ~~</p>
+</div>
+
+<!-- Goals -->
+<div id="goals-content" class="content">
+  <h2>Goals</h2>
+ <div class="goals">
+  <ol>
+    <b>
+    <li>프론트엔드 공부</li>
+    <li>건강하기</li>
+    <li>질 좋은 수면하기</li>
+  </ol>
+</b>
+</div>
 </div>
 </body>
 </html>

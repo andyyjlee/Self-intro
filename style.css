@@ -1,29 +1,74 @@
 body {
-  /* 🎯 미션: 배경 색상을 찾아 넣어보세요! */
-  background-color:rgb(200, 225, 228); 
-  padding: 30px;
-}
+    background-color: rgb(220, 247, 247);
+    font-family: Arial;
+  }
 
-.title-container h1 {
-  /* 🎯 미션: 이름의 색상 코드를 원하는 색깔로 찾아보세요! */ 
-  border: 5px groove black;
+  .tabs {
   text-align: center;
 }
 
-p{
-font-size: 20px;
+  /* radio 숨기기 */
+  input {
+    display: none;
+  }
+
+  /* 버튼 */
+  .tabs label {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #0a0101;
+    cursor: pointer;
+    background-color: aliceblue;
+  }
+
+  /* 선택된 버튼 */
+  input:checked + label {
+    background-color: #007BFF;
+    color: white;
+  }
+
+  /* 콘텐츠 숨기기 */
+  .content {
+    display: none;
+    margin-top: 30px;
+  }
+
+  /* 기본 화면 */
+  #home:checked ~ #home-content {
+    display: block;
+  }
+
+.content.center {text-align: center;}
+  
+  /* 각 탭 */
+  #intro-tab:checked ~ #intro-content {
+    display: block;
+  }
+  .contact {
+  background-color: rgb(198, 234, 242) !important;
+  margin: 10px, padding: 10px
+}  
+
+.links {background-color: rgb(198, 226, 243);}
+
+  #dev-tab:checked ~ #dev-content {
+    display: block;
+  }
+
+  #goals-tab:checked ~ #goals-content {
+    display: block;
+  }
+
+  .center {
+    margin-top: 150px;
+    font-size: 30px;
+  }
+
+.goals {
+  font-size: larger;
+  margin: 10px;              /* 바깥 여백 */
+  padding: 15px;             /* 안쪽 여백 */
+  border: 1px solid #ccc;    /* 테두리 */
+  border-radius: 10px;       /* 모서리 둥글게 */
+  background-color: #deefe3; /* 박스 안 색 */
 }
-
-ul {
-  color: orange;
-}
-
-li { list-style:disc}
-
-a {
-  text-decoration: none;
-}
-
-.abcd {border: 2px dashed grey }
-.later-half{padding:10px; background-color: rgb(188, 237, 227);}
-.links {text-align: center; background-color:rgb(209, 223, 248)}
