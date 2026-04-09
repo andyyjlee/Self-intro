@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Practice Portfolio</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <input type="radio" id="home" name="tab" checked>
+<input type="radio" id="intro-tab" name="tab">
+<input type="radio" id="dev-tab" name="tab">
+<input type="radio" id="goals-tab" name="tab">
+
+<!-- 버튼 -->
+<div class="tabs">
+  <label for="intro-tab">Introduction</label>
+  <label for="dev-tab">Development</label>
+  <label for="goals-tab">Goals</label>
+</div>
+
+<div id="home-content" class="content center">
+<p id="greeting"></p>
+</div>
+
+<div class="box">
+    <p id="time"></p>
+</div>
+<div class="colorchange">
+<p>* 시계를 클릭하면 배경화면 색상이 변경됩니다 *</p>
+</div>
+<!-- Introduction -->
+<div id="intro-content" class="content">
+  <h1>이유준</h1>
+  <p>연세대 멋쟁이 사자처럼 14기</p>
+  <p>프론트엔드 파트</p>
+  <p>경영학과 21학번</p>
+
+<div class="contact">
+  <p><b>Contact</b></p>
+  <p>tel: 010-7411-8225</p>
+  <p>email: andyyjlee@naver.com</p>
+</div>
+
+  <p><b>Likes</b></p>
+  <ol>
+    <li>스포츠 경기 관람</li>
+    <li>홈 카페 (커피 브루잉..)</li>
+    <li>여행</li>
+  </ol>
+<div class ="links">
+  <a href="https://github.com/andyyjlee/">My Github</a><br>
+  <a href="https://www.instagram.com/youjune.lee/">Instagram</a>
+</div>
+</div>
+<!-- Development -->
+<div id="dev-content" class="content">
+  <h2>Development</h2>
+    <li>프론트엔드 언어: html,css,js </li>
+    <li>데이버분석 기초: Python, R</li>
+
+<br>
+  <button onclick="like()">👍 좋아요</button>
+<p id="count">0</p>
+
+</div>
+
+<!-- Goals -->
+<div id="goals-content" class="content">
+  <h2>Goals</h2>
+ <div class="goals">
+  <ol>
+    <b>
+    <li>프론트엔드 공부</li>
+    <li>건강하기</li>
+    <li>질 좋은 수면하기</li>
+  </ol>
+</b>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+#time {
+  font-size: 20px;
+  color: blue;
+  text-align: center;
+  margin-top: 50px auto;
+  border-radius: 15px;
+  background-color: white;
+  border: 2px solid black;
+  width: 250px;}
+
+#greeting {
+  font-size: 40px;   /* 글자 크기 */
+  font-weight: bold; /* 굵게 */
+}
+.box {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.colorchange{
+  fontsize: 6px;
+  color: rgb(106, 102, 102);
+  text-align: center;
+}
+
+body {
+    background-color: rgb(220, 247, 247);
+    font-family: Arial;
+  }
+
+  .tabs {
+  text-align: center;
+}
+
+  /* radio 숨기기 */
+  input {
+    display: none;
+  }
+
+  /* 버튼 */
+  .tabs label {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #0a0101;
+    cursor: pointer;
+    background-color: aliceblue;
+  }
+
+  /* 선택된 버튼 */
+  input:checked + label {
+    background-color: #007BFF;
+    color: white;
+  }
+
+  /* 콘텐츠 숨기기 */
+  .content {
+    display: none;
+    margin-top: 30px;
+  }
+
+  /* 기본 화면 */
+  #home:checked ~ #home-content {
+    display: block;
+  }
+
+.content.center {text-align: center;}
+  
+  /* 각 탭 */
+  #intro-tab:checked ~ #intro-content {
+    display: block;
+  }
+  .contact {
+  background-color: rgb(198, 234, 242) !important;
+  margin: 10px, padding: 10px
+}  
+
+.links {background-color: rgb(198, 226, 243);}
+
+  #dev-tab:checked ~ #dev-content {
+    display: block;
+  }
+
+  #goals-tab:checked ~ #goals-content {
+    display: block;
+  }
+
+  .center {
+    margin-top: 150px;
+    font-size: 30px;
+  }
+
+.goals {
+  font-size: larger;
+  margin: 10px;              /* 바깥 여백 */
+  padding: 15px;             /* 안쪽 여백 */
+  border: 1px solid #ccc;    /* 테두리 */
+  border-radius: 10px;       /* 모서리 둥글게 */
+  background-color: #deefe3; /* 박스 안 색 */
+}
+
+button {
+  font-size: 18px;
+  padding: 12px 20px;
+  border: solid green;
+  border-radius: 12px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#count {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  background-color: #e8f5e9;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 10px;
+}
